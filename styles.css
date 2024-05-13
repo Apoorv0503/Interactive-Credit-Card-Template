@@ -287,7 +287,9 @@ form .flex-row{
 footer{
     color: var(--very-dark-violet);
     font-size: .8rem;
-    margin-top: 2rem;
+    position: absolute;
+    z-index: 100;
+    bottom: 1rem;
     text-align: center;
 }
 footer a{
