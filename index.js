@@ -57,7 +57,6 @@ const containsDateInput = function(input){
         input.parentElement.parentElement.classList.remove('error-invalid');
     }else if(input.value !== '' && input.value.match(/^[0-9]+$/) === null){  
         //if date input is not empty but does not contains number, then show "invalid date" error 
-        // wil return null if value has number
         // wil return null if value has anything other than number
         input.parentElement.parentElement.classList.remove('error-empty');
         input.parentElement.parentElement.classList.add('error-invalid');

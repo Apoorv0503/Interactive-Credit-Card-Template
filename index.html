@@ -15,7 +15,7 @@
           <!-- Source of Desktop bg View -->
         <source media="(min-width: 1024px)" srcset="./images/bg-main-desktop.png">
         <!-- default Source of other bg Views ( eg mobile/tab which is <=1024px) -->
-        <img src="./images/bg-main-mobile.png" alt="">
+        <img src="./images/bg-main-mobile.png" alt="mobile_bg">
       </picture>
       <div class="card card-back">
         <span class="cvc-output">000</span>
@@ -35,12 +35,16 @@
     <!-- input section -->
     <div class="input-section">
       <form>
+
+         <!-- to get input of cardholder name -->
         <div class="input-field">
           <label for="name">Cardholder Name</label>
           <input type="text" placeholder="e.g. Jane Appleseed" id="name" name="name" maxlength="25" class="name-input">
           <p class="error empty">Can't be blank</p>
           <p class="error invalid">Wrong format, letters only</p>
         </div>
+
+        <!-- to get input of card number -->
         <div class="input-field">
           <label for="number">Card Number</label>
           <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="number" name="number" minlength="16" maxlength="16" class="number-input">
@@ -50,6 +54,8 @@
 
         <!-- to get input of exp date and cvv -->
         <div class="flex-row">
+
+          <!-- date input -->
           <div class="input-field date-container">
             <label id='date'>Exp. Date (MM/YY)</label>
             <div class="date-input">
@@ -59,6 +65,8 @@
             <p class="error empty">Can't be blank</p>
             <p class="error invalid">Wrong format, numbers only</p>
           </div>
+
+          <!-- cvc input -->
           <div class="input-field">
             <label for="cvc">CVC</label>
             <input type="text" placeholder="e.g. 123" id="cvc" name="cvc" maxlength="3" class="cvc-input">
@@ -68,12 +76,15 @@
         </div>
         <button type="submit" class="btn">Confirm</button>
       </form>
+
+      <!-- thank you modal -->
       <section class="modal">
         <img src="./images/icon-complete.svg" alt="">
         <h2>Thank you!</h2>
         <p>We've added your card details</p>
         <button type="button" class="btn close">Continue</button>
       </section>
+
       <footer class="attribution">
         Challenge by <a href="https://www.crio.do/" target="_blank">crio.do</a>. 
         Coded by <a href="https://www.linkedin.com/in/apoorva-dwivedi-6717b7185/" target="_blank">Apoorva</a>.
